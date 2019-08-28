@@ -12,3 +12,25 @@ for (let currentNumber = 1; currentNumber <= 100; currentNumber++) {
 		console.log("Monkey");
 	} else console.log(currentNumber);
 }
+
+// battle of the bands
+
+let bandNumber = 1;
+
+const takeNumber = function(bandName) {
+	let bandOrder = `${bandNumber}. ${bandName}`;
+	bandNumber++;
+	return bandOrder;
+};
+
+const sum = takeNumber("Sum 82");
+console.log(sum); // This should print "1. Galactic Scum" in the console
+
+const velvet = takeNumber("Velvet Underpants");
+console.log(velvet); // This should print "2. Underdogs" in the console
+
+const oar = takeNumber("O.A.R.");
+console.log(oar);
+
+const artic = takeNumber("Arctic Donkeys");
+console.log(artic);
